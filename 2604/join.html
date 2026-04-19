@@ -7,156 +7,180 @@
     <title>陽明学区 町内会加入のご案内</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .glass-effect { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); }
+        .yomei-gradient { background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 text-lg leading-relaxed">
+<body class="bg-gray-100 text-gray-800 leading-relaxed overflow-x-hidden">
 
-    <main class="max-w-2xl mx-auto bg-white min-h-screen shadow-md rounded-b-3xl overflow-hidden pb-12">
+    <!-- 背景装飾 -->
+    <div class="fixed inset-0 -z-10 bg-[radial-gradient(#fed7aa_1px,transparent_1px)] [background-size:20px_20px] opacity-20"></div>
+
+    <main class="max-w-2xl mx-auto bg-white min-h-screen shadow-2xl relative">
         
         <!-- Hero Section -->
-        <header class="bg-gradient-to-b from-orange-50 to-white pt-12 pb-8 px-6 text-center">
-            <h1 class="text-2xl font-black text-gray-900 mb-4 leading-tight">
-                陽明学区での暮らしに、<br>
-                ひとさじの安心と温もりを。
+        <header class="relative pt-16 pb-12 px-8 text-center overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-orange-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+            <h1 class="text-3xl font-black text-gray-900 mb-6 leading-tight tracking-tight">
+                陽明での暮らしを、<br>
+                もっと豊かに、もっと身近に。
             </h1>
-            <p class="text-gray-600 font-medium">
-                陽明小学校の通学区域にお住まいの<br>すべての方へ。
+            <p class="text-gray-600 font-medium text-lg">
+                陽明小学校の通学区域にお住まいの<br>すべての方々へ
             </p>
         </header>
 
-        <!-- Housing Info (誤解を解くセクション) -->
+        <!-- Message Card -->
         <section class="px-6 mb-12">
-            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
-                <h2 class="text-lg font-bold text-blue-900 mb-3 flex items-center gap-2">
-                    <span>🏠</span> どなたでも、いつからでも。
+            <div class="yomei-gradient rounded-3xl p-8 shadow-inner border border-orange-100 relative">
+                <div class="absolute top-4 right-6 text-4xl opacity-20 italic font-black">Yomei</div>
+                <h2 class="text-xl font-bold text-orange-900 mb-4 flex items-center gap-2">
+                    心強い「隣人」でありたい
                 </h2>
-                <p class="text-base text-gray-700 mb-4 leading-relaxed">
-                    「マンションだから」「賃貸だから」「今まで入っていなかったから」という遠慮はいりません。
+                <p class="text-gray-700 mb-6 leading-loose">
+                    「マンションだから」「賃貸だから」「今まで入っていなかったから」。<br>
+                    そんな気兼ねは、もう必要ありません。陽明学区町内会は、この街に住むすべての方々のためのコミュニティです。
                 </p>
-                <div class="space-y-3 text-base">
-                    <div class="flex gap-2">
-                        <span class="text-blue-500 font-bold">●</span>
-                        <p><span class="font-bold">マンションにお住まいの方へ</span><br>
-                        建物の管理は管理組合が、街全体の安全（防犯灯・防災・見守り）は町内会が。役割を分担して暮らしを支えています。</p>
+                <div class="grid gap-4">
+                    <div class="bg-white/60 p-5 rounded-2xl flex gap-4 items-start">
+                        <span class="text-2xl">🏢</span>
+                        <div>
+                            <p class="font-bold text-gray-900 mb-1">マンションにお住まいの方</p>
+                            <p class="text-sm text-gray-600 leading-normal">建物の維持管理はマンションで。街の安全（防犯灯や見守り）は町内会で。役割を分担して二重の安心を。</p>
+                        </div>
                     </div>
-                    <div class="flex gap-2">
-                        <span class="text-blue-500 font-bold">●</span>
-                        <p><span class="font-bold">賃貸住宅にお住まいの方へ</span><br>
-                        同じ街に住む「隣人」として、共助のネットワークは等しく開かれています。お祝い品やイベントももちろん対象です。</p>
+                    <div class="bg-white/60 p-5 rounded-2xl flex gap-4 items-start">
+                        <span class="text-2xl">🏠</span>
+                        <div>
+                            <p class="font-bold text-gray-900 mb-1">賃貸住宅・既住の方</p>
+                            <p class="text-sm text-gray-600 leading-normal">居住年数や形態を問わず、同じ街の「隣人」として等しく歓迎します。お祝いやイベントも、もちろん対象です。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Benefits Section -->
-        <section class="px-6 mb-12">
-            <h2 class="text-xl font-bold text-gray-900 mb-6 text-center">町内会が支える「4つの安心」</h2>
+        <!-- Benefits Grid -->
+        <section class="px-6 mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-px bg-gray-200 flex-1"></div>
+                <h2 class="text-lg font-black text-gray-400 uppercase tracking-widest">Support & Care</h2>
+                <div class="h-px bg-gray-200 flex-1"></div>
+            </div>
             
-            <div class="grid gap-6">
+            <div class="grid grid-cols-1 gap-8">
                 <!-- 1. 防災 -->
-                <div class="border border-gray-100 rounded-2xl p-5 shadow-sm bg-white">
-                    <div class="text-3xl mb-2">📢</div>
-                    <h3 class="font-bold text-lg mb-2 text-orange-700">いざという時の「共助」の輪</h3>
-                    <p class="text-base text-gray-600 italic mb-2">災害時、真っ先に助け合えるのはお隣さんです。</p>
-                    <p class="text-base">独自の防災無線や青色ヘルメットの配備、実践的な訓練を通じて、地域の守りを固めています。</p>
+                <div class="flex gap-6 group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-3xl shrink-0 shadow-sm group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">📢</div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">いざという時の「共助」の輪</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">独自の防災無線や青色ヘルメットの配備。災害時に真っ先に助け合える「お隣さんの繋がり」を大切にしています。</p>
+                    </div>
                 </div>
 
-                <!-- 2. 防犯・環境 -->
-                <div class="border border-gray-100 rounded-2xl p-5 shadow-sm bg-white">
-                    <div class="text-3xl mb-2">🌙</div>
-                    <h3 class="font-bold text-lg mb-2 text-orange-700">安心な生活環境の維持</h3>
-                    <p class="text-base text-gray-600 italic mb-2">夜道が明るいのも、街が綺麗なのも理由があります。</p>
-                    <p class="text-base">防犯カメラの設置や街頭の維持管理、子どもの登下校の見守り、清掃活動など、日々の安全を支えています。</p>
+                <!-- 2. 防犯 -->
+                <div class="flex gap-6 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl shrink-0 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">🌙</div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">夜道を照らす、街の安全</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">防犯灯の維持や防犯カメラの設置、登下校の見守り活動。皆さんの会費が、日々の安心な生活環境を支えています。</p>
+                    </div>
                 </div>
 
                 <!-- 3. 慶弔 -->
-                <div class="border border-gray-100 rounded-2xl p-5 shadow-sm bg-white">
-                    <div class="text-3xl mb-2">🎁</div>
-                    <h3 class="font-bold text-lg mb-2 text-orange-700">地域で祝う、人生の節目</h3>
-                    <p class="text-base text-gray-600 italic mb-2">喜びを分かち合う、古くからの良き習慣です。</p>
-                    <p class="text-base">新小学1年生への入学祝品や、敬老の節目（80歳〜）のお祝い金など、温かい制度が整っています。</p>
-                </div>
-
-                <!-- 4. コミュニティ -->
-                <div class="border border-gray-100 rounded-2xl p-5 shadow-sm bg-white">
-                    <div class="text-3xl mb-2">🎪</div>
-                    <h3 class="font-bold text-lg mb-2 text-orange-700">世代を超えた交流イベント</h3>
-                    <p class="text-base text-gray-600 italic mb-2">気軽に参加できる、笑顔の場をつくっています。</p>
-                    <p class="text-base">健康フェスティバルや科学教室など、子どもからシニアまで楽しめる行事を開催しています（自由参加）。</p>
+                <div class="flex gap-6 group">
+                    <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-3xl shrink-0 shadow-sm group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">🎁</div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">地域で祝う、人生の節目</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">新1年生への入学祝品や、敬老の節目のお祝い金。古き良き日本の「お互い様」の精神が、陽明には息づいています。</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Stats -->
-        <section class="px-6 mb-12 text-center bg-gray-50 py-8">
-            <p class="text-base text-gray-600 mb-2">陽明学区の加入状況</p>
-            <p class="text-2xl font-black text-gray-900 mb-1">約 <span class="text-3xl text-orange-600">5,200</span> 世帯</p>
-            <p class="text-sm text-gray-500 italic">名古屋市内でもトップクラスの高い加入率です</p>
+        <!-- Stats Section -->
+        <section class="mb-16 py-12 bg-gray-900 text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-orange-600 opacity-10 mix-blend-overlay"></div>
+            <p class="text-orange-200 text-sm font-bold tracking-[0.2em] mb-4 uppercase">Current Status</p>
+            <div class="flex justify-center items-baseline gap-2 mb-2">
+                <span class="text-sm">約</span>
+                <span class="text-5xl font-black tracking-tighter">5,200</span>
+                <span class="text-xl">世帯が加入</span>
+            </div>
+            <p class="text-gray-400 text-sm italic px-8">名古屋市内でもトップクラスの加入率が、街の結束力の証です</p>
         </section>
 
-        <!-- Membership Fee -->
-        <section class="px-6 mb-12">
-            <h2 class="text-lg font-bold text-gray-900 mb-3">会費について</h2>
-            <div class="bg-white border border-gray-200 rounded-2xl p-5">
-                <p class="text-base mb-4">
-                    町内会費は<span class="font-bold text-lg">「年額2,000円等」</span>です。
-                </p>
-                <p class="text-sm text-gray-600 bg-gray-50 p-3 rounded-lg leading-relaxed">
-                    ※金額や集金方法（引き落とし・手集金等）は、お住まいの住所が属する各町内会（全24町内会）やマンションによって異なります。詳細は、お申し込み後に担当の町内会長よりご案内させていただきます。
-                </p>
+        <!-- Fee & Steps -->
+        <section class="px-8 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-lg font-bold mb-4 flex items-center gap-2"><span>💳</span> 会費について</h2>
+                    <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 text-base">
+                        <p class="mb-3 leading-relaxed">町内会費は<span class="font-bold text-orange-600 text-xl">年額2,000円等</span>です。</p>
+                        <p class="text-xs text-gray-500 leading-relaxed">※金額や集金方法は、所属する町内会やマンションにより異なります。詳細は申し込み後にご案内いたします。</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold mb-4 flex items-center gap-2"><span>🚀</span> 加入の流れ</h2>
+                    <div class="space-y-3 text-sm font-bold">
+                        <div class="flex items-center gap-3 bg-white border border-gray-100 p-3 rounded-xl shadow-sm">
+                            <span class="w-6 h-6 bg-gray-900 text-white rounded-full flex items-center justify-center text-[10px]">1</span> Webで申請
+                        </div>
+                        <div class="flex items-center gap-3 bg-white border border-gray-100 p-3 rounded-xl shadow-sm">
+                            <span class="w-6 h-6 bg-gray-900 text-white rounded-full flex items-center justify-center text-[10px]">2</span> 事務局確認
+                        </div>
+                        <div class="flex items-center gap-3 bg-white border border-gray-100 p-3 rounded-xl shadow-sm">
+                            <span class="w-6 h-6 bg-gray-900 text-white rounded-full flex items-center justify-center text-[10px]">3</span> 担当より連絡
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Join Flow -->
-        <section class="px-6 mb-12">
-            <h2 class="text-lg font-bold text-gray-900 mb-4 text-center">ご加入までの3ステップ</h2>
-            <div class="space-y-4">
-                <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100">
-                    <span class="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">1</span>
-                    <p class="text-base font-bold">Webフォームから申し込み</p>
+        <!-- CTA Section -->
+        <section id="form" class="px-6 mb-8">
+            <div class="bg-white border-2 border-gray-900 rounded-[2.5rem] p-10 shadow-[10px_10px_0px_0px_rgba(0,0,0,0.05)] text-center relative">
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-6 py-2 rounded-full text-xs font-black tracking-widest uppercase shadow-lg">
+                    Official Application
                 </div>
-                <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100">
-                    <span class="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">2</span>
-                    <p class="text-base font-bold">事務局にて担当エリアを確認</p>
-                </div>
-                <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100">
-                    <span class="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">3</span>
-                    <p class="text-base">担当の町内会長より詳細をご案内</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Form Section (準備中ダミー) -->
-        <section id="form" class="px-6">
-            <div class="bg-orange-600 rounded-3xl p-8 text-white shadow-xl text-center">
-                <h2 class="text-xl font-bold mb-4">加入申し込み・お問い合わせ</h2>
                 
-                <div class="py-4">
-                    <div class="text-5xl mb-4">🚧</div>
-                    <h3 class="text-lg font-bold mb-4 leading-relaxed">オンライン窓口は<br>現在準備中です</h3>
-                    <p class="text-sm text-orange-100 leading-relaxed mb-6">
-                        よりスムーズにご案内できるよう、現在オンラインでの受付システムを準備しております。<br>
-                        恐れ入りますが、システム公開まではお近くの町内会長・組長、またはご近所の方まで直接お声がけくださいますようお願いいたします。
+                <div class="mb-8">
+                    <h2 class="text-2xl font-black mb-4">名古屋市公式窓口へ</h2>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        瑞穂区の町内会加入申し込みは、<br class="hidden md:block">
+                        名古屋市の公式電子申請システム（Graffer）にて承っております。
                     </p>
-                    
-                    <!-- ダミーのリンクボタン -->
-                    <a href="#" onclick="alert('※現在はデモ画面のため機能しません。正式承認後にフォームを開設予定です！'); return false;" 
-                       class="block w-full bg-orange-500/50 text-white font-bold py-4 rounded-xl border-2 border-orange-300 border-dashed text-lg transition-transform active:scale-95">
-                        申し込みフォームへ（準備中）
-                    </a>
                 </div>
+                
+                <a href="https://ttzk.graffer.jp/city-nagoya/smart-apply/apply-procedure-alias/chounaikai-mizuho/door" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center gap-3 w-full bg-orange-600 hover:bg-orange-700 text-white font-black py-5 px-8 rounded-2xl shadow-xl transition-all active:scale-95 text-xl">
+                    <span>申請画面へ進む</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+
+                <p class="mt-8 text-xs text-gray-400 font-medium leading-loose">
+                    ※外部サイト（名古屋市公式電子申請サービス）へ移動します。<br>
+                    ご入力内容は、瑞穂区役所を通じて陽明学区の担当町内会長へ共有されます。
+                </p>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="mt-12 text-center px-6">
-            <a href="./index.html" class="text-orange-600 font-bold text-base flex items-center justify-center gap-1">
-                <span>←</span> デジタル回覧板へ戻る
+        <footer class="pt-8 pb-12 text-center px-6">
+            <a href="./index.html" class="inline-flex items-center gap-2 text-gray-500 hover:text-orange-600 font-bold transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                <span>デジタル回覧板へ戻る</span>
             </a>
-            <p class="text-xs text-gray-400 mt-8 italic">
-                陽明学区連絡協議会・地域福祉推進協議会
-            </p>
+            <div class="mt-12 opacity-30 text-[10px] font-black tracking-[0.5em] uppercase grayscale">
+                Yomei Community DX Project
+            </div>
         </footer>
 
     </main>
