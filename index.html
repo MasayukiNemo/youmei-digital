@@ -44,7 +44,7 @@
 
         <!-- トップ画像 (生成AI画像想定のプレースホルダー) -->
         <div class="mt-4 px-4">
-            <img src="./top-image.png" alt="春の瑞穂区を象徴する温かみのある抽象イラスト" class="w-full h-56 object-cover rounded-2xl shadow-sm bg-orange-100" onerror="this.src='https://placehold.co/800x400/ffe4e6/ea580c?text=Yomei+Spring+Image'">
+            <img src="./top-image.jpg" alt="春の瑞穂区を象徴する温かみのある抽象イラスト" class="w-full h-56 object-cover rounded-2xl shadow-sm bg-orange-100" onerror="this.src='https://placehold.co/800x400/ffe4e6/ea580c?text=Yomei+Spring+Image'">
         </div>
 
         <!-- リード文 -->
@@ -215,6 +215,24 @@
             </div>
         </section>
 
+        <!-- セクション5: 加入案内への導線 (新規追加部分) -->
+        <section class="px-4 mb-8">
+            <div class="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-200 rounded-2xl p-6 shadow-sm text-center relative overflow-hidden">
+                <div class="absolute -right-4 -bottom-6 text-8xl opacity-10">🤝</div>
+                <h2 class="text-xl font-bold text-orange-800 mb-3 flex items-center justify-center gap-2 relative z-10">
+                    <span>🤝</span> 陽明学区での暮らしを、もっと安心に
+                </h2>
+                <p class="text-base text-gray-700 mb-5 leading-relaxed relative z-10 text-left md:text-center">
+                    マンションや賃貸にお住まいの方、以前から住んでいるけれど未加入の方も大歓迎です。<br>
+                    街の安全や子どもたちの笑顔を支える「共助の輪」に、あなたも加わりませんか？
+                </p>
+                <a href="./join.html" 
+                   class="block w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 text-lg relative z-10 flex items-center justify-center gap-2">
+                    町内会について詳しく見る <span>▶</span>
+                </a>
+            </div>
+        </section>
+
         <!-- フッター / アクション導線 -->
         <footer class="bg-gray-100 p-6 rounded-b-3xl">
             <h3 class="text-center font-bold text-gray-800 mb-4">この情報を近所の方に教える</h3>
@@ -228,25 +246,13 @@
                 </a>
 
                 <!-- 原本確認ボタン -->
-<a href="https://drive.google.com/file/d/1q6ruD1kMHRxivJDh6SF28q3YsdQtIgpu/view?usp=drive_link" 
-   target="_blank" rel="noopener noreferrer"
-   class="block w-full bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
-    <span>📄</span> 詳しく読みたい方はこちら<br>（回覧板原本PDFを開く）
-</a>
+                <a href="https://drive.google.com/file/d/1q6ruD1kMHRxivJDh6SF28q3YsdQtIgpu/view?usp=drive_link" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="block w-full bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                    <span>📄</span> 詳しく読みたい方はこちら<br>（回覧板原本PDFを開く）
+                </a>
             </div>
-<section class="mx-4 my-8 p-6 bg-orange-50 border-2 border-orange-100 rounded-3xl shadow-sm text-center">
-    <h3 class="text-xl font-bold text-orange-800 mb-3 flex items-center justify-center gap-2">
-        <span>🤝</span> 陽明学区での暮らしを、もっと安心に
-    </h3>
-    <p class="text-base text-gray-700 mb-6 leading-relaxed">
-        マンションや賃貸にお住まいの方、以前から住んでいるけれど未加入の方も大歓迎です。
-        街の安全や子どもたちの笑顔を支える「共助の輪」に、あなたも加わりませんか？
-    </p>
-    <a href="./join.html" 
-       class="inline-block w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-transform active:scale-95 text-lg">
-        町内会について詳しく見る
-    </a>
-</section>
+
             <p class="text-center text-sm text-gray-500 mt-8">
                 &copy; 令和8年 陽明学区連絡協議会・地域福祉推進協議会
             </p>
